@@ -1,16 +1,13 @@
-document.getElementById('btn-submit').addEventListener('click', function(){
+document.getElementById("btn-submit").addEventListener("click", function () {
+  const emailField = document.getElementById("user-email");
+  const email = emailField.value;
 
-    const emailField = document.getElementById('user-email');
-    const email = emailField.value;
-   
-    const passwordField = document.getElementById('user-password');
-    const password = passwordField.value;
-    
- 
-    if(email === 'ohidulislamsumon' && password === 'sumon'){
-        window.location.href = 'bank.html';
-    }
-    else{
-        alert('Tui password vule gesos!! Tor aj theke vat bondho.')
-    }
-})
+  const passwordField = document.getElementById("user-password");
+  const password = passwordField.value;
+
+  if (email === "ohidulislamsumon@gmail.com" && password === "sumon") {
+    window.location.href = "bank.html";
+  } else {
+    alert("Tui password vule gesos!! Tor aj theke vat bondho.");
+  }
+});
